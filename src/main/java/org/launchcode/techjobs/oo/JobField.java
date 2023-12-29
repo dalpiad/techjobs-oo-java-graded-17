@@ -2,45 +2,41 @@ package org.launchcode.techjobs.oo;
 
 import java.util.Objects;
 
-public class PositionType {
-
+public class JobField {
     private int id;
     private static int nextId = 1;
     private String value;
 
-    public PositionType() {
+    public JobField() {
         id = nextId;
         nextId++;
     }
 
-    public PositionType(String value) {
+    public JobField(String value) {
         this();
         this.value = value;
     }
 
-    // TODO: Add a custom toString() method that returns the data stored in 'value'.
+    // Custom toString, equals, and hashCode methods:
+
+    @Override
     public String toString() {
         if(value.isEmpty()) {
             return "Data not available";
         } else {return value;}
     }
 
-
-    // TODO: Add custom equals and hashCode methods. Consider two PositionType objects "equal" when
-    //  their id fields match.
-
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(Object o) {  // Two objects are equal if they have the same id.
         if (this == o) return true;
-        if (!(o instanceof PositionType that)) return false;
-        return getId() == that.getId();
+        if (!(o instanceof JobField jobField)) return false;
+        return getId() == jobField.getId();
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(getId());
     }
-
 
     // Getters and Setters:
 

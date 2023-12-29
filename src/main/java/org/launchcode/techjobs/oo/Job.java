@@ -2,6 +2,8 @@ package org.launchcode.techjobs.oo;
 
 import java.util.Objects;
 
+import static java.lang.System.lineSeparator;
+
 public class Job {
 
     private int id;
@@ -22,18 +24,28 @@ public class Job {
         nextId++;
     }
 
-    public Job(String name, Employer employer, Location location, PositionType positionType, CoreCompetency coreCompetency) {
+    public Job(String aName, Employer aEmployer, Location aLocation, PositionType aPositionType, CoreCompetency aCoreCompetency) {
         this();
-        this.name = name;
-        this.employer = employer;
-        this.location = location;
-        this.positionType = positionType;
-        this.coreCompetency = coreCompetency;
+        this.name = aName;
+        this.employer = aEmployer;
+        this.location = aLocation;
+        this.positionType = aPositionType;
+        this.coreCompetency = aCoreCompetency;
     }
 
 
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
     //  match.
+
+    @Override
+    public String toString() {
+        return lineSeparator() + "ID: " + getId() + "\n" +
+                "Name: " + getName() + "\n" +
+                "Employer: " + getEmployer() + "\n" +
+                "Location: " + getLocation() + "\n" +
+                "Position Type: " + getPositionType() + "\n" +
+                "Core Competency: " + getCoreCompetency() + lineSeparator();
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -56,7 +68,9 @@ public class Job {
     }
 
     public String getName() {
-        return name;
+        if(name.isEmpty()) {
+            return "Data not available";
+        } else {return name;}
     }
 
     public void setName(String name) {
