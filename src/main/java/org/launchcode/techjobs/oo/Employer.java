@@ -10,12 +10,12 @@ public class Employer extends JobField{
 
     // Custom toString, equals, and hashCode methods:
 
-    @Override
-    public String toString() {
-        if(super.getValue().isEmpty()) {
-            return "Data not available";
-        } else {return getValue();}
-    }
+//    @Override
+//    public String toString() {
+//        if(super.getValue().isEmpty()) {
+//            return "Data not available";
+//        } else {return getValue();}
+//    }
 
 //    @Override
 //    public boolean equals(Object o) {  // Two objects are equal if they have the same id.
