@@ -107,7 +107,8 @@ public class JobTest {
                 new PositionType("Quality control"),
                 new CoreCompetency("Persistence")
         );
-        String testJobOutput = lineSeparator() + "ID: 4" +
+
+        String testJobOutput = lineSeparator() + String.format("ID: %d", testJob1.getId())  +
                 "\nName: Product tester" +
                 "\nEmployer: ACME" +
                 "\nLocation: Desert" +
@@ -127,7 +128,9 @@ public class JobTest {
                 new CoreCompetency("")
         );
 
-        String testJobOutput = lineSeparator() + "ID: 3" +
+
+        String testJobOutput = lineSeparator() +
+                String.format("ID: %d", testJob1.getId()) +
                 "\nName: Data not available" +
                 "\nEmployer: Data not available" +
                 "\nLocation: Data not available" +
