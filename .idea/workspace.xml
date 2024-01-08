@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Completed task 6.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Completed task 6. fixed JobTest.">
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/AbstractTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/AbstractTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/TestTaskFive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/TestTaskFive.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,8 +82,11 @@
     "Gradle.JobTest.executor": "Run",
     "Gradle.JobTest.testJobsForEquality.executor": "Debug",
     "Gradle.JobTest.testSettingJobId.executor": "Run",
+    "Gradle.JobTest.testToStringHandlesEmptyField.executor": "Debug",
     "Gradle.JobTest.testToStringStartsAndEndsWithNewLine.executor": "Run",
     "Gradle.TestTaskFive.executor": "Run",
+    "Gradle.TestTaskFive.testToStringContainsCorrectLabelsAndData.executor": "Debug",
+    "Gradle.TestTaskFive.testToStringHandlesEmptyField.executor": "Debug",
     "Gradle.TestTaskFive.testToStringStartsAndEndsWithNewLine.executor": "Debug",
     "Gradle.TestTaskFour.executor": "Run",
     "Gradle.TestTaskSix.executor": "Run",
@@ -106,7 +110,7 @@
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.Tests in 'org.launchcode.techjobs.oo'">
+  <component name="RunManager">
     <configuration name="JobTest.testJobsForEquality" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -249,11 +253,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestTaskFive.testToStringStartsAndEndsWithNewLine" />
         <item itemvalue="Gradle.Tests in 'org.launchcode.techjobs.oo'" />
         <item itemvalue="Gradle.JobTest.testToStringStartsAndEndsWithNewLine" />
         <item itemvalue="Gradle.JobTest.testSettingJobId" />
         <item itemvalue="Gradle.JobTest.testJobsForEquality" />
-        <item itemvalue="Gradle.TestTaskFive.testToStringStartsAndEndsWithNewLine" />
       </list>
     </recent_temporary>
   </component>
@@ -321,7 +325,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704235204019</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Completed task 6. fixed JobTest.">
+      <option name="closed" value="true" />
+      <created>1704419645145</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704419645145</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -330,7 +342,8 @@
     <MESSAGE value="Completed task 4." />
     <MESSAGE value="working on step 5." />
     <MESSAGE value="Completed task 6." />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed task 6." />
+    <MESSAGE value="Completed task 6. fixed JobTest." />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed task 6. fixed JobTest." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -339,6 +352,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java</url>
           <line>70</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java</url>
+          <line>139</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/TestTaskFive.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
