@@ -108,7 +108,7 @@ public class JobTest {
                 new CoreCompetency("Persistence")
         );
 
-        String testJobOutput = lineSeparator() + String.format("ID: %d", testJob1.getId())  +
+        String testJobOutput = String.format(lineSeparator() + "ID: %d", testJob1.getId())  +
                 "\nName: Product tester" +
                 "\nEmployer: ACME" +
                 "\nLocation: Desert" +
@@ -129,8 +129,7 @@ public class JobTest {
         );
 
 
-        String testJobOutput = lineSeparator() +
-                String.format("ID: %d", testJob1.getId()) +
+        String testJobOutput = String.format(lineSeparator() + "ID: %d", testJob1.getId()) +
                 "\nName: Data not available" +
                 "\nEmployer: Data not available" +
                 "\nLocation: Data not available" +
